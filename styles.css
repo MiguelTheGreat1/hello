@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: rgb(189, 225, 122);
+    background-color: rgb(173, 216, 230); /* Light blue background */
     font-family: 'Nunito', sans-serif;
     margin: 0;
 }
@@ -22,7 +22,7 @@ body {
 .header_text {
     font-size: 40px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(25, 25, 112); /* Midnight blue text */
     text-align: center;
     margin: 20px 0 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -37,7 +37,7 @@ body {
 
 .btn {
     background-color: rgba(255, 255, 255, 0.9);
-    color: rgb(233, 48, 48);
+    color: rgb(255, 69, 0); /* Red-Orange text */
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
@@ -51,7 +51,7 @@ body {
 }
 
 .btn:hover {
-    background-color: rgb(233, 48, 48);
+    background-color: rgb(255, 69, 0); /* Change button color on hover */
     color: white;
     transform: translateY(-2px);
 }
