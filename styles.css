@@ -8,17 +8,6 @@ body {
     margin: 0;
 }
 
-#noButton {
-    position: absolute;
-    left: 30%;
-    transition: transform 0.5s ease;
-}
-
-#yesButton {
-    position: absolute;
-    right: 30%;
-}
-
 .header_text {
     font-size: 40px;
     font-weight: bold;
@@ -30,9 +19,10 @@ body {
 
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Distribute buttons evenly */
     align-items: center;
     margin-top: 20px;
+    width: 100%; /* Make buttons take full width */
 }
 
 .btn {
@@ -67,6 +57,7 @@ body {
     border-radius: 15px; /* Rounded corners for the gif */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     max-width: 100%; /* Responsive width */
+    max-height: 60vh; /* Set max height to maintain aspect ratio */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -80,7 +71,7 @@ body {
     }
 
     .gif_container img {
-        height: 60vh; /* Limit height for smaller screens */
+        max-height: 60vh; /* Limit height for smaller screens */
     }
 
     .btn {
@@ -99,7 +90,7 @@ body {
     }
 
     .gif_container img {
-        height: 60vh; /* Limit height for medium screens */
+        max-height: 60vh; /* Limit height for medium screens */
     }
 
     .btn {
