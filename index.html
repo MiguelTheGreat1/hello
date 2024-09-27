@@ -27,20 +27,19 @@
 
         .buttons {
             display: flex;
-            justify-content: space-around; /* Use space-around for even spacing */
+            justify-content: center; /* Center buttons horizontally */
             align-items: center;
             margin-top: 20px;
-            width: 100%; /* Make buttons take full width */
+            gap: 10px; /* Add gap between buttons */
         }
 
         .btn {
             background-color: rgba(255, 255, 255, 0.9);
             color: rgb(255, 69, 0); /* Red-Orange text */
-            padding: 15px 32px;
+            padding: 15px 20px; /* Adjusted padding */
             text-align: center;
             display: inline-block;
             font-size: 16px;
-            margin: 0 10px; /* Adjust horizontal margin for spacing */
             cursor: pointer;
             border: none;
             border-radius: 12px;
@@ -82,6 +81,7 @@
         <div class="buttons">
             <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
             <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+            <button class="btn" id="closeButton" onclick="closeWindow()">Close</button>
             <script>
                 function nextPage() {
                     window.location.href = "yes.html"; // Redirect to yes.html on clicking Yes
@@ -94,6 +94,10 @@
                     noButton.style.position = "absolute";
                     noButton.style.left = `${x}px`;
                     noButton.style.top = `${y}px`;
+                }
+
+                function closeWindow() {
+                    window.close(); // Attempt to close the current window
                 }
             </script>
         </div>
