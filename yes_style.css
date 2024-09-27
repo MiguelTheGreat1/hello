@@ -8,11 +8,12 @@ body {
 
 .main-container {
     text-align: center; /* Center text inside the container */
+    padding: 20px; /* Add padding for mobile view */
 }
 
 .celebration-header {
     color: #FF6F61; /* Coral color for header */
-    font-size: 48px; /* Adjust the font size as needed */
+    font-size: 4vw; /* Use viewport width for responsive font size */
     margin-bottom: 20px; /* Space between header and image */
 }
 
@@ -23,6 +24,12 @@ body {
 }
 
 .celebration-gif {
-    max-width: 100%; /* Ensure the image is responsive */
+    max-width: 90%; /* Ensure the image does not exceed 90% of the viewport width */
     height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .celebration-header {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
 }
