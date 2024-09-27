@@ -5,6 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Let's Go Out!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: rgb(173, 216, 230); /* Light blue background */
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+        }
+
+        .header_text {
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(25, 25, 112); /* Midnight blue text */
+            text-align: center;
+            margin: 20px 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around; /* Use space-around for even spacing */
+            align-items: center;
+            margin-top: 20px;
+            width: 100%; /* Make buttons take full width */
+        }
+
+        .btn {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgb(255, 69, 0); /* Red-Orange text */
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 0 10px; /* Adjust horizontal margin for spacing */
+            cursor: pointer;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 69, 0); /* Change button color on hover */
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .gif_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; /* Add margin to separate from buttons */
+        }
+
+        .gif_container img {
+            border-radius: 15px; /* Rounded corners for the gif */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            max-width: 100%; /* Responsive width */
+            max-height: 60vh; /* Set max height to maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
