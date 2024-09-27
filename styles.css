@@ -19,7 +19,7 @@ body {
 
 .buttons {
     display: flex;
-    justify-content: space-around; /* Distribute buttons evenly */
+    justify-content: space-around; /* Use space-around for even spacing */
     align-items: center;
     margin-top: 20px;
     width: 100%; /* Make buttons take full width */
@@ -32,7 +32,7 @@ body {
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 0 10px; /* Adjust horizontal margin for spacing */
     cursor: pointer;
     border: none;
     border-radius: 12px;
@@ -77,6 +77,7 @@ body {
     .btn {
         padding: 10px 18px;
         font-size: 14px;
+        margin: 0 5px; /* Adjust margin for smaller screens */
     }
 }
 
@@ -96,5 +97,6 @@ body {
     .btn {
         padding: 15px 25px;
         font-size: 14px;
+        margin: 0 10px; /* Adjust margin for medium screens */
     }
 }
