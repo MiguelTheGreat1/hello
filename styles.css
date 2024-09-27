@@ -22,7 +22,6 @@ body {
     justify-content: center; /* Center buttons horizontally */
     align-items: center;
     margin-top: 20px;
-    gap: 5px; /* Reduced gap between buttons */
 }
 
 .btn {
@@ -32,6 +31,7 @@ body {
     text-align: center;
     display: inline-block;
     font-size: 16px;
+    margin: 0 5px; /* Adjust margin to decrease distance */
     cursor: pointer;
     border: none;
     border-radius: 12px;
