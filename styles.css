@@ -56,44 +56,37 @@ body {
     border-radius: 15px; /* Rounded corners for the gif */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     max-width: 100%; /* Responsive width */
-    max-height: 60vh; /* Set max height to maintain aspect ratio */
+    max-height: 40vh; /* Limit height to fit smaller screens */
     height: auto; /* Maintain aspect ratio */
 }
 
-@media only screen and (max-width: 320px) and (max-height: 568px) {
+@media only screen and (max-width: 480px) {
+    .header_text {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Adjust button padding for mobile */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .gif_container img {
+        max-height: 30vh; /* Limit height for mobile */
+    }
+}
+
+@media only screen and (max-width: 320px) {
     body {
         height: 100vh;
     }
 
     .header_text {
-        font-size: 24px;
-    }
-
-    .gif_container img {
-        max-height: 60vh; /* Limit height for smaller screens */
+        font-size: 24px; /* Smaller font size */
     }
 
     .btn {
-        padding: 10px 18px;
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 414px) and (max-height: 736px) {
-    body {
-        height: 90vh;
-    }
-
-    .header_text {
-        font-size: 32px;
-    }
-
-    .gif_container img {
-        max-height: 60vh; /* Limit height for medium screens */
-    }
-
-    .btn {
-        padding: 15px 25px;
-        font-size: 14px;
+        padding: 10px 15px; /* Further adjust button padding */
+        font-size: 12px; /* Smaller font size */
+        margin: 0 2px; /* Reduce margin for tighter spacing */
     }
 }
